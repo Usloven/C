@@ -1,8 +1,12 @@
 ﻿// See https://aka.ms/new-console-template for more information
-int A = Convert.ToInt32(Console.ReadLine());
-string yes = "да";
-string no = "нет";
-if (A%2>0){
-    Console.WriteLine(no);
+int Pow (int A, int B)
+{
+    int result = 1;
+    for (int i=0; i<B; i++)
+    {
+        result = result* A;
     }
-else {Console.WriteLine(yes);}
+    return result;
+}
+
+Console.WriteLine(Pow(2,10));
