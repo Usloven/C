@@ -8,6 +8,7 @@
 void FillArr (int[] Array)
 {
   int result = 0;
+  Console.Write("Введите 5 чисел через enter: ");
       for (int i=0;i<Array.Length;i++)
       {
         Array[i] = Convert.ToInt32(Console.ReadLine());
