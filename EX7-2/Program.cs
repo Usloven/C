@@ -31,9 +31,18 @@ for (int i =0; i< arr.GetLength(0); i++)
 
 FillNewArr(Arr1);
 
-void FindPosArr (int [,] Arr, int k, int l)
+void FindPosArr (int [,] Arr)
 {
-    Console.Write($"  {Arr[k,l]}");
+    Console.WriteLine("Введите число строки");
+    int k =  Convert.ToInt32(Console.ReadLine());
+    Console.WriteLine("Введите число cтолбца");
+    int l =  Convert.ToInt32(Console.ReadLine());
+    if (k>Arr.GetLength(0) || l> Arr.GetLength(1) )
+    {
+        Console.WriteLine("такого числа в массиве нет");
+    }
+    else
+    {Console.Write($"  {Arr[k,l]}");}
 }
 
-FindPosArr(Arr1,5,5);
+FindPosArr(Arr1);
