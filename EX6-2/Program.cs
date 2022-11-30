@@ -12,8 +12,14 @@ void FillArr (double K1, double B1, double K2, double B2)
  
 Console.WriteLine($"{x},{y}");
 } 
+Console.Write("Введите K1 числа через enter: ");
+double K1 = Convert.ToDouble(Console.ReadLine());
+Console.Write("Введите B1 числа через enter: ");
+double B1 = Convert.ToDouble(Console.ReadLine());
+Console.Write("Введите K2  числа через enter: ");
+double K2 = Convert.ToDouble(Console.ReadLine());
+Console.Write("Введите B2 числа через enter: ");
+double B2 = Convert.ToDouble(Console.ReadLine());
 
-
-int[] nums = new int[5];
-FillArr(5,2,9,4);
+FillArr(K1,B1,K2,B2);
 
